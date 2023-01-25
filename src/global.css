@@ -1,52 +1,138 @@
-.App {
-  text-align: center;
+:root {
+  --black: #141414;
+  --grey: rgb(135, 135, 135);
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  align-items: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  background: lightgray;
+
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button:hover {
+  cursor: pointer;
+}
+
+/* primary header */
+.logo {
+}
+
+.primary-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: steelblue; */
+}
+
+.primary-header a {
+  color: var(--black);
+  text-decoration: none;
+  padding-left: 1rem;
+  /* letter-spacing: .02em; */
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+.primary-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+.tabor {
+  /* justify-self: center; */
+  /* padding: 0 auto; */
+  /* vertical-align: middle; */
+  z-index: 99;
+}
+
+.west-side {
+  flex: 20%;
+  /* background-color: red; */
+}
+
+.east-side {
+  /* position: relative;
+  left: auto; */
+  display: flex;
+  flex: 20%;
+  /* background-color: green; */
+  justify-content: flex-end;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+#book {
+  padding-right: 1rem;
+}
+
+
+
+@media (max-width: 615px) {
+
+  body {
+    font-size: 16px;
+  }
+  .primary-navigation {
+    --gap: 2em;
+    
+    position: fixed;
+    z-index: 1000;
+    inset: 0 20% 0 0;
+
+    flex-direction: column;
+    padding: min(16vh, 10rem) 2em;
+
+    transform: translateX(-100%);
+    transition: transform 350ms ease-out;
+
+    background: hsl(0 0% 100% / 0.9);
+  }
+
+  #show-links {
+    transform: translateX(0%);
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    width: 1rem;
+    background: transparent;
+    aspect-ratio: 1;
+    /* top: .1rem; */
+    /* left: .1rem; */
+    border: 0;
+  }
+
+  .hidden {
+    display: none;
+  }
+
 }
