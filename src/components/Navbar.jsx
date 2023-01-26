@@ -48,7 +48,7 @@ export default function Navbar() {
 
             <div className='east-side'>
 
-                <a href='https://booksy.com/en-us/720068_tabor-barbershop_barber-shop_134776_portland' id={'book'} target='_blank' rel='noreferrer' ><strong>BOOK <span className='hidden'>APPOINTMENT</span></strong>
+                <a href='https://booksy.com/en-us/720068_tabor-barbershop_barber-shop_134776_portland' id={'book'} target='_blank' rel='noReferrer' ><strong>BOOK <span className='hidden'>APPOINTMENT</span></strong>
                 </a>
                 {/* <NavLink to={"/reviews"} className='hidden'>CONTACT</NavLink> */}
                 {/* 971-888-4133 */}

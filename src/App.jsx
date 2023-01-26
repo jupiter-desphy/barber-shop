@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './global.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Landing, About, Reviews } from './pages';
+import { Landing, About, Reviews, Contact } from './pages';
 import Navbar from './components/Navbar';
 
 
@@ -18,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/reviews" element={<Reviews />} />
       </Routes>
     </BrowserRouter>
