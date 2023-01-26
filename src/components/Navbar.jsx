@@ -24,19 +24,21 @@ export default function Navbar() {
                         <NavLink to={"/contact"} onClick={() => setShowLinks(false)}>CONTACT</NavLink>
                     </li>
                     <li>
-                        <NavLink to={"/reviews"} onClick={() => setShowLinks(false)}>REVIEWS</NavLink>
+                        <a href='https://booksy.com/en-us/720068_tabor-barbershop_barber-shop_134776_portland' target='_blank' rel='noReferrer' >
+                            SERVICES
+                        </a>
                     </li>
                 </ul>
             </nav>
             {/* <h2 className='logo'> */}
             <NavLink to={"/"}>
-            <h4 className='logo'>
-                <img src={logo} alt='logo' height='40em' />
-                <div>
-                    BARBER SHOP
-                </div>
-            </h4>
-            {/* <img src="./barbershop.jpeg" alt='logo' /> */}
+                <h4 className='logo'>
+                    <img src={logo} alt='logo' height='40em' />
+                    <div>
+                        BARBER SHOP
+                    </div>
+                </h4>
+                {/* <img src="./barbershop.jpeg" alt='logo' /> */}
             </NavLink>
 
             {/* </h2> */}
@@ -48,7 +50,8 @@ export default function Navbar() {
 
             <div className='east-side'>
 
-                <a href='https://booksy.com/en-us/720068_tabor-barbershop_barber-shop_134776_portland' id={'book'} target='_blank' rel='noReferrer' ><strong>BOOK <span className='hidden'>APPOINTMENT</span></strong>
+                <a href='https://booksy.com/en-us/720068_tabor-barbershop_barber-shop_134776_portland' id={'book'} target='_blank' rel='noReferrer' >
+                    <strong>BOOK <span className='hidden'>APPOINTMENT</span></strong>
                 </a>
                 {/* <NavLink to={"/reviews"} className='hidden'>CONTACT</NavLink> */}
                 {/* 971-888-4133 */}
