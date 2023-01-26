@@ -13,7 +13,7 @@ export default function Navbar() {
     console.log('logo', logo)
 
     return (
-
+        <>
         <header className='primary-header'>
             <nav className='west-side'>
                 <ul id={showLinks ? "show-links" : ""} className='primary-navigation flex'>
@@ -57,5 +57,8 @@ export default function Navbar() {
                 {/* 971-888-4133 */}
             </div>
         </header>
+        <div className='nav-margin'>
+        </div>
+        </>
     )
 }
