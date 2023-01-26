@@ -12,6 +12,7 @@ function App() {
   return (
     <BrowserRouter>
         <Navbar />
+        {/* <h4 className='flex-center'>BARBER SHOP</h4> */}
 
 
       <Routes>
