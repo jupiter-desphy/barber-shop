@@ -18,7 +18,7 @@ export const Landing = () => {
         </picture>
         <div className='columns'>
 
-  <GoogleMap width={"100vw"} height={'400px'} />        
+  <GoogleMap width={"100%"} height={'400px'} />        
         </div>
     </div>
   )

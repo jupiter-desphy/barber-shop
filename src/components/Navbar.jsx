@@ -30,19 +30,19 @@ export default function Navbar() {
             </nav>
             {/* <h2 className='logo'> */}
             <NavLink to={"/"}>
-            <h5 className='logo'>
-                <img src={logo} alt='logo' height='35em' />
+            <h4 className='logo'>
+                <img src={logo} alt='logo' height='40em' />
                 <div>
                     BARBER SHOP
                 </div>
-            </h5>
+            </h4>
             {/* <img src="./barbershop.jpeg" alt='logo' /> */}
             </NavLink>
 
             {/* </h2> */}
 
             <button onClick={toggleNav} className='mobile-nav-toggle' aria-controls='primary-navigation' data-visible="false" aria-expanded={showLinks}>
-                <Hamburger size={28} />
+                <Hamburger size={30} color="#141414" />
                 <span className='sr-only'>Menu</span>
             </button>
 
