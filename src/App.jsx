@@ -7,13 +7,20 @@ import Navbar from './components/Navbar';
 
 function App() {
 
+  // prevents animations during resizing
+  let resizeTimer;
+  window.addEventListener("resize", () => {
+    document.body.classList.add("resize-animation-stopper");
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      document.body.classList.remove("resize-animation-stopper");
+    }, 400);
+  });
 
 
   return (
     <BrowserRouter>
-        <Navbar />
-        {/* <h4 className='flex-center'>BARBER SHOP</h4> */}
-
+      <Navbar />
 
       <Routes>
         <Route path="/" element={<Landing />} />

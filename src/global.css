@@ -15,6 +15,11 @@
   box-sizing: border-box;
 }
 
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}
+
 body {
   align-items: center;
   font-family: var(--sans-serif);
