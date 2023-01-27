@@ -13,17 +13,18 @@ import barbershop2 from '../images/barbershop5-4.jpeg';
 export const Landing = () => {
   return (
     <>
-      <picture>
+    <div className="hero-container">
+      <picture className="hero" >
         <source srcSet={barbershop1}
           media="(orientation: landscape)" />
         <source srcSet={barbershop2}
           media="(max-width: 650px)" />
-        <img src={barbershop} alt="barber shop" width='100%' />
+        <img src={barbershop1} alt="barber shop" width='100%' />
       </picture>
-
+</div>
       <div className='columns'>
 
-        <div>
+        <div className="west-side hours" >
           <Hours />
           {/* Mon - Fri &nbsp; | &nbsp; 10AM - 6PM
         <br></br>
@@ -32,17 +33,17 @@ export const Landing = () => {
 
         <div className='directions'>
           <Address />
-          <br></br>
         </div>
 
-        <div id='call' className='call'>
-          <PhoneNumber />
+        <div className='east-side'>
+          <div id='call'>
+            Call <PhoneNumber />
+          </div>
+          <br />
         </div>
-          <br></br>
       </div>
-
-      {/* <ImageGallery />
-
+<br></br>
+<div className='invert-colors'>
       <h1>WHO WE ARE</h1>
       <div className=''>
         <p>
@@ -51,7 +52,12 @@ export const Landing = () => {
         <p>
           We offer precision haircuts, beard trims, and hot towel shaves as well as a wide variety of classic scissor and clipper haircuts that will have you feeling brand new.
         </p>
-      </div> */}
+        <br></br>
+      </div>
+</div>
+
+      <ImageGallery />
+
       {/* <div className='columns'>
 
         <div className='hours' >
@@ -75,7 +81,7 @@ export const Landing = () => {
         </div>
 
       </div> */}
-      <GoogleMap width={"100%"} height={'300px'} />
+      {/* <GoogleMap width={"100%"} height={'300px'} /> */}
     </>
   )
 }

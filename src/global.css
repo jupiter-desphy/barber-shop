@@ -15,6 +15,11 @@
   box-sizing: border-box;
 }
 
+.invert-colors{
+  color: var(--black);
+  background-color: rgb(255, 249, 238);
+}
+
 .resize-animation-stopper * {
   animation: none !important;
   transition: none !important;
@@ -104,16 +109,14 @@ a {
   display: none;
 }
 
-.primary-navigation {
+ul, ol {
   list-style: none;
-  padding: 0;
-  margin: 0;
-  align-items: flex-start;
 }
 
-.primary-navigation:first-child {
+.primary-navigation:first-child, .hours {
   padding-left: 2rem;
 }
+
 
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
@@ -125,12 +128,22 @@ a {
   white-space: nowrap;
 }
 
+.hero-container {
+  min-height: 84vh;
+  /* overflow: hidden; */
+  position: relative;
+}
+.hero {
+position: absolute;
+top: -9rem;
+z-index: -1;
+}
 
 .tabor {
   /* justify-self: center; */
   /* padding: 0 auto; */
   /* vertical-align: middle; */
-  z-index: 99;
+  /* z-index: 99; */
 }
 
 .west-side {
@@ -147,20 +160,26 @@ a {
   justify-content: flex-end;
 }
 
-.columns {
-  padding: 2rem 10vw 0;
+.columns{
+  /* width: 100%; */
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+}
+
+.columns {
+  
+  padding: 0;
+  display: flex;
+  /* justify-content: space-between; */
   font-size: 1.1rem;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  background-color: #fff;
+  height: 4.5em;
 }
 
 .hours {
-justify-content: space-between;
-}
-
-.columns > * {
-  padding-bottom: 1rem;
+  justify-content: space-between;
 }
 
 .flex {
@@ -173,16 +192,16 @@ justify-content: space-between;
   justify-content: center;
 }
 
-#book {
+#book, #call {
   margin-right: 1.6rem;
   border: solid;
   border-width: 1px;
-  padding: .6rem .8rem .5rem;
+  padding: .6rem .8rem .5rem .8rem;
   align-content: center;
   letter-spacing: .05rem;
 }
 
-#book:hover {
+#book:hover, #call:hover {
   background-color: rgb(238, 238, 238);
   text-decoration: none;
 }
@@ -250,7 +269,6 @@ justify-content: space-between;
 
   #book {
     margin-right: 1.2rem;
-    border-width: 1px;
     padding: .6rem .7rem .5rem;
   }
   .hidden {
@@ -258,9 +276,24 @@ justify-content: space-between;
   }
 
   .columns {
+    height: auto;
     flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 10vw;
   }
 
+  .columns > * {
+    padding-left: 0;
+    padding-bottom: 1rem;
+  }
+  .hero-container {
+    min-height: 0;
+  }
+
+  .hero {
+  position: relative;
+  top: 0;
+  }
 }
 
 a:hover {
