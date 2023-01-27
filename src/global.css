@@ -37,12 +37,21 @@ h1 {
   padding: 2rem 10vw .5rem;
 }
 
+h3 {
+  padding: 1rem 0;
+}
+
 p {
   /* max-width: 80%; */
   padding: 1vh 10vw;
   font-size: 1.2rem;
   line-height: 1.2em;
   letter-spacing: .01rem;
+}
+
+th, td {
+  padding: 0 1rem 1rem 0;
+  justify-content: left;
 }
 
 button:hover {
@@ -139,11 +148,16 @@ a {
   justify-content: flex-end;
 }
 
-/* .columns {
+.columns {
+  padding: 10vw;
   display: flex;
   gap: 1rem;
-  flex-direction: column;
+
+  font-size: 1.1rem;
+  /* flex-direction: column; */
 }
+
+/* 
 
 .columns > * {
   flex: 1;
@@ -245,6 +259,10 @@ a {
   }
   .hidden {
     display: none;
+  }
+
+  .columns {
+    flex-direction: column;
   }
 
 }

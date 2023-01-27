@@ -21,12 +21,12 @@ export default function Navbar() {
                         <NavLink to={"/about"} onClick={() => setShowLinks(false)}>ABOUT</NavLink>
                     </li>
                     <li>
-                        <NavLink to={"/contact"} onClick={() => setShowLinks(false)}>CONTACT</NavLink>
-                    </li>
-                    <li>
                         <a href='https://booksy.com/en-us/720068_tabor-barbershop_barber-shop_134776_portland' target='_blank' rel='noReferrer' >
                             SERVICES
                         </a>
+                    </li>
+                    <li>
+                        <NavLink to={"/contact"} onClick={() => setShowLinks(false)}>CONTACT</NavLink>
                     </li>
                 </ul>
             </nav>
