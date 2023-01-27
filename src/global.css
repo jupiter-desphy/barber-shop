@@ -4,6 +4,7 @@
 :root {
   --black: #141414;
   --background-dark: #1b1d21;
+  --dark-green: #0d4538;
   --grey: rgb(135, 135, 135);
   --header-height: 4.5em;
 
@@ -140,6 +141,7 @@ ol {
   padding-top: calc(100vh - var(--header-height) - var(--header-height));
   margin-top: var(--header-height);
   background-size: cover;
+  background-position: bottom;
   /* background-color: rgba(159, 35, 35, 0.489); */
 }
 .hero {
@@ -157,6 +159,7 @@ ol {
 }
 
 .west-side {
+  display:flex;
   flex: 20%;
   /* background-color: red; */
 }
@@ -184,7 +187,7 @@ ol {
   /* flex-wrap: wrap; */
   align-items: center;
   background-color: #fff;
-  height: 4.5em;
+  height: var(--header-height);
 }
 
 .hours {
@@ -203,21 +206,25 @@ ol {
 
 #book,
 #call {
-  margin-right: 1.6rem;
+  margin: 0 1.6rem;
   border: solid;
   border-width: 1px;
   padding: 0.6rem 0.8rem 0.5rem 0.8rem;
   align-content: center;
   letter-spacing: 0.05rem;
+
+  transition: 0.2s background-color linear, 0.2s color linear;
 }
 
-#book:hover,
-#call:hover {
-  background-color: rgb(238, 238, 238);
+#book:hover, #call:hover {
+  color: rgb(238, 238, 238);
+  background-color: rgb(202, 52, 52);
+  /* background-color: rgb(238, 238, 238); */
   text-decoration: none;
+
 }
 
-@media (max-width: 750px) {
+@media (max-width: 920px) {
   body {
     font-size: 16px;
   }
@@ -289,7 +296,12 @@ ol {
 
   .columns > * {
     padding-left: 0;
+    margin-left: 0;
     padding-bottom: 1rem;
+  }
+
+  #call {
+    margin-left: 0;
   }
   .hero-container {
     padding-top: calc(45vh);

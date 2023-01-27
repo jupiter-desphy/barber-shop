@@ -11,7 +11,7 @@ import mobileImage from '../images/barbershop5-4.jpeg';
 
 export const Landing = () => {
 
-  const bgImage = window.innerWidth >= 750 ? desktopImage : mobileImage;
+  const bgImage = window.innerWidth >= 920 ? desktopImage : mobileImage;
 
   return (
     <>
@@ -27,8 +27,12 @@ export const Landing = () => {
       </div>
       <div className='columns'>
 
-        <div className="west-side hours" >
-          <Hours />
+        <div className="west-side" >
+          {/* <div id='call'> */}
+            <a href='tel:9718884133' id='call'>
+              Call 971-888-4133
+            </a>
+          {/* </div> */}
         </div>
 
         <div className='directions'>
@@ -36,13 +40,10 @@ export const Landing = () => {
         </div>
 
         <div className='east-side'>
-          <div id='call'>
-            Call <PhoneNumber />
-          </div>
-          <br />
+          <Hours />
         </div>
       </div>
-      <br></br>
+      
       <div className=''>
         <h1>WHO WE ARE</h1>
         <div className=''>
