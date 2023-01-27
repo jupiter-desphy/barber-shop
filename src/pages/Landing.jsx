@@ -41,7 +41,7 @@ export const Landing = () => {
           <br></br>
       </div>
 
-      <ImageGallery />
+      {/* <ImageGallery />
 
       <h1>WHO WE ARE</h1>
       <div className=''>
@@ -51,8 +51,8 @@ export const Landing = () => {
         <p>
           We offer precision haircuts, beard trims, and hot towel shaves as well as a wide variety of classic scissor and clipper haircuts that will have you feeling brand new.
         </p>
-      </div>
-      <div className='columns'>
+      </div> */}
+      {/* <div className='columns'>
 
         <div className='hours' >
           <h2>
@@ -74,7 +74,7 @@ export const Landing = () => {
           <br></br>
         </div>
 
-      </div>
+      </div> */}
       <GoogleMap width={"100%"} height={'300px'} />
     </>
   )
