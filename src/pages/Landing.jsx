@@ -4,31 +4,31 @@ import Hours from '../components/Hours';
 import Address from '../components/Address';
 import PhoneNumber from '../components/PhoneNumber';
 import ImageGallery from '../components/ImageGallery';
-import barbershop from '../images/barbershop.jpeg';
-import barbershop1 from '../images/barbershop169.jpeg';
-import barbershop2 from '../images/barbershop5-4.jpeg';
+import desktopImage from '../images/barbershop169.jpeg';
+import mobileImage from '../images/barbershop5-4.jpeg';
 
 // import MyGallery from '../components/ImageGallery';
 
 export const Landing = () => {
+
+  const bgImage = window.innerWidth >= 750 ? desktopImage : mobileImage;
+
   return (
     <>
-    <div className="hero-container">
-      <picture className="hero" >
-        <source srcSet={barbershop1}
-          media="(orientation: landscape)" />
-        <source srcSet={barbershop2}
-          media="(max-width: 650px)" />
-        <img src={barbershop1} alt="barber shop" width='100%' />
-      </picture>
-</div>
+      <div className="hero-container" style={{ backgroundImage: `url(${bgImage})` }}>
+
+        {/* <picture className="hero">
+          <source srcSet={desktopImage}
+            media="(orientation: landscape)" />
+          <source srcSet={mobileImage}
+            media="(max-width: 650px)" />
+          <img src={desktopImage} alt="barber shop" width='100%' />
+        </picture> */}
+      </div>
       <div className='columns'>
 
         <div className="west-side hours" >
           <Hours />
-          {/* Mon - Fri &nbsp; | &nbsp; 10AM - 6PM
-        <br></br>
-          Sat - Sun &nbsp; | &nbsp; 10AM - 3PM */}
         </div>
 
         <div className='directions'>
@@ -42,19 +42,19 @@ export const Landing = () => {
           <br />
         </div>
       </div>
-<br></br>
-<div className='invert-colors'>
-      <h1>WHO WE ARE</h1>
+      <br></br>
       <div className=''>
-        <p>
-          As third and fourth generation barbers, we're a father and son team with over 100 years of experience in the family name.
-        </p>
-        <p>
-          We offer precision haircuts, beard trims, and hot towel shaves as well as a wide variety of classic scissor and clipper haircuts that will have you feeling brand new.
-        </p>
-        <br></br>
+        <h1>WHO WE ARE</h1>
+        <div className=''>
+          <p>
+            As third and fourth generation barbers, we're a father and son team with over 100 years of experience in the family name.
+          </p>
+          <p>
+            We offer precision haircuts, beard trims, and hot towel shaves as well as a wide variety of classic scissor and clipper haircuts that will have you feeling brand new.
+          </p>
+          <br></br>
+        </div>
       </div>
-</div>
 
       <ImageGallery />
 
