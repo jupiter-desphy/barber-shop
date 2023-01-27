@@ -5,7 +5,7 @@ export default function Hours() {
         <table>
             <tr>
                 <td>
-                    Monday - Friday
+                    Mon - Fri
                 </td>
                 <td>
                     10AM - 6PM
@@ -13,7 +13,7 @@ export default function Hours() {
             </tr>
             <tr>
                 <td>
-                    Sunday - Saturday
+                    Sun - Sat
                 </td>
                 <td>
                     10AM - 3PM
