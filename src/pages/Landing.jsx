@@ -46,20 +46,26 @@ export const Landing = () => {
       </div>
 
       {/* <br /> */}
-      <div className='marquee flex'>
-        <p>
-          Walk-Ins Welcome.
 
-        </p>
-        All Ages Welcome.
+      <div className='marquee-container'>
+        <div className='marquee'>
 
-        <p>Military & Senior Discounts.</p>
+          {/* <p>
+            All ages welcome!
+          </p> */}
+          <p className='pre-scroll'>
+            Kids, senior & military discounts!
+          </p>
+          <p>
+            Walk-ins welcome!
+          </p>
+        </div>
       </div>
 
-      {/* <br /> */}
+      <br />
 
       <div id='about'>
-      <ImageGallery />
+        <ImageGallery />
 
         <h1>WHO WE ARE</h1>
         <div className=''>
