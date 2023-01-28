@@ -11,7 +11,7 @@ import mobileImage from '../images/barbershop5-4.jpeg';
 
 export const Landing = () => {
 
-  const bgImage = window.innerWidth >= 920 ? desktopImage : mobileImage;
+  const bgImage = window.innerWidth > window.innerHeight ? desktopImage : mobileImage;
 
   return (
     <>
@@ -43,8 +43,8 @@ export const Landing = () => {
           <Hours />
         </div>
       </div>
-      
-      <div className=''>
+
+      <div id='about'>
         <h1>WHO WE ARE</h1>
         <div className=''>
           <p>
