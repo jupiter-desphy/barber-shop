@@ -77,12 +77,13 @@ export const Landing = () => {
       <PortraitAlbum />
       <a href="https://www.yelp.com/biz/tabor-barber-shop-portland">
         <div className="review marquee-container">
+          <br/>
           <div className='marquee'>
-            Help us get the word out!
             <u>
               Shout us out on yelp!
             </u>
           </div>
+          <br/>
         </div>
       </a>
 
