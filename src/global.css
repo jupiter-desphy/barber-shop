@@ -70,6 +70,18 @@ button:hover {
 }
 
 /* primary header */
+
+.west-side {
+  display:flex;
+  flex: 20%;
+}
+
+.east-side {
+  display: flex;
+  flex: 20%;
+  justify-content: flex-end;
+}
+
 .logo {
   display: grid;
   justify-content: center;
@@ -100,10 +112,10 @@ button:hover {
   background-color: #fff;
 }
 
-.nav-margin {
+/* .nav-margin {
   margin-top: var(--header-height);
   position: relative;
-}
+} */
 
 a {
   color: var(--black);
@@ -135,43 +147,18 @@ ol {
 }
 
 .hero-container {
-  /* min-height: calc(84vh); */
-  /* overflow: hidden; */
-  /* position: absolute; */
   padding-top: calc(100vh - var(--header-height) - var(--header-height));
   margin-top: var(--header-height);
   background-size: cover;
   background-position: bottom right;
-  /* background-color: rgba(159, 35, 35, 0.489); */
-}
-.hero {
-  /* position: absolute; */
-  /* top: -9rem; */
-  /* z-index: -1; */
-  /* object-fit: none; */
 }
 
-.tabor {
+/* .tabor { */
   /* justify-self: center; */
   /* padding: 0 auto; */
   /* vertical-align: middle; */
   /* z-index: 99; */
-}
-
-.west-side {
-  display:flex;
-  flex: 20%;
-  /* background-color: red; */
-}
-
-.east-side {
-  /* position: relative;
-  left: auto; */
-  display: flex;
-  flex: 20%;
-  /* background-color: green; */
-  justify-content: flex-end;
-}
+/* } */
 
 .columns {
   /* width: 100%; */
@@ -188,6 +175,32 @@ ol {
   align-items: center;
   background-color: #fff;
   height: var(--header-height);
+}
+
+@keyframes scroll-left {
+
+  
+  0% {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translate(100%);
+  }
+  
+  100% {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translate(-100%);
+  }
+}
+  
+.marquee {
+  display: block;
+-moz-transform: translateX(100%);
+-webkit-transform: translateX(100%);
+transform: translate(100%);
+-moz-animation: 20s scroll-left linear infinite;
+-webkit-animation: 20s scroll-left linear infinite;
+animation: 20s scroll-left linear infinite;
 }
 
 .hours {

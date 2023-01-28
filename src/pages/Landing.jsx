@@ -29,9 +29,9 @@ export const Landing = () => {
 
         <div className="west-side" >
           {/* <div id='call'> */}
-            <a href='tel:9718884133' id='call'>
-              Call 971-888-4133
-            </a>
+          <a href='tel:9718884133' id='call'>
+            Call 971-888-4133
+          </a>
           {/* </div> */}
         </div>
 
@@ -43,6 +43,22 @@ export const Landing = () => {
           <Hours />
         </div>
       </div>
+
+      <br />
+      <div className='marquee flex'>
+        <p>
+          Walk-Ins Welcome.
+
+        </p>
+        All Ages Welcome.
+        <p>
+
+        </p>
+        <p>Military and Senior Discounts.</p>
+      </div>
+
+      <br />
+      <ImageGallery />
 
       <div id='about'>
         <h1>WHO WE ARE</h1>
@@ -56,8 +72,6 @@ export const Landing = () => {
           <br></br>
         </div>
       </div>
-
-      <ImageGallery />
 
       {/* <div className='columns'>
 
