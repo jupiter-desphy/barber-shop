@@ -42,7 +42,7 @@ export default function Navbar() {
                 {/* </h2> */}
 
                 <button onClick={toggleNav} className='mobile-nav-toggle' aria-controls='primary-navigation' data-visible="false" aria-expanded={showLinks}>
-                    <Hamburger size={30} color="#141414" />
+                    <Hamburger size={26} color="#141414" />
                     <span className='sr-only'>Menu</span>
                 </button>
 
