@@ -49,11 +49,7 @@ export const Landing = () => {
 
       <div className='marquee-container'>
         <div className='marquee'>
-
-          {/* <p>
-            All ages welcome!
-          </p> */}
-          <p className='pre-scroll'>
+          <p>
             Kids, senior & military discounts!
           </p>
           <p>
@@ -79,6 +75,16 @@ export const Landing = () => {
         </div>
       </div>
       <PortraitAlbum />
+      <a href="https://www.yelp.com/biz/tabor-barber-shop-portland">
+        <div className="review marquee-container">
+          <div className='marquee'>
+            Help us get the word out!
+            <u>
+              Shout us out on yelp!
+            </u>
+          </div>
+        </div>
+      </a>
 
       {/* <div className='columns'>
 
