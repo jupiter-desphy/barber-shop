@@ -10,8 +10,6 @@ export default function Navbar() {
         setShowLinks(!showLinks);
     }
 
-    console.log('logo', logo)
-
     return (
         <>
         <header className='primary-header'>

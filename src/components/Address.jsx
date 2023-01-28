@@ -4,6 +4,8 @@ export default function Address() {
     return (
         <a href="https://goo.gl/maps/BtkGsQoTwcnCsjgG6">
             <table>
+                <tbody>
+
                 <tr>
                     <td>
                         5504 E Burnside St.
@@ -14,6 +16,7 @@ export default function Address() {
                         Portland, OR 97215
                     </td>
                 </tr>
+                </tbody>
             </table>
         </a>
     )

@@ -4,6 +4,7 @@ import Hours from '../components/Hours';
 import Address from '../components/Address';
 import PhoneNumber from '../components/PhoneNumber';
 import ImageGallery from '../components/ImageGallery';
+import PortraitAlbum from '../components/PortraitAlbum';
 import desktopImage from '../images/barbershop169.jpeg';
 import mobileImage from '../images/barbershop5-4.jpeg';
 
@@ -44,23 +45,22 @@ export const Landing = () => {
         </div>
       </div>
 
-      <br />
+      {/* <br /> */}
       <div className='marquee flex'>
         <p>
           Walk-Ins Welcome.
 
         </p>
         All Ages Welcome.
-        <p>
 
-        </p>
-        <p>Military and Senior Discounts.</p>
+        <p>Military & Senior Discounts.</p>
       </div>
 
-      <br />
-      <ImageGallery />
+      {/* <br /> */}
 
       <div id='about'>
+      <ImageGallery />
+
         <h1>WHO WE ARE</h1>
         <div className=''>
           <p>
@@ -72,6 +72,7 @@ export const Landing = () => {
           <br></br>
         </div>
       </div>
+      <PortraitAlbum />
 
       {/* <div className='columns'>
 

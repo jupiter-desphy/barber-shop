@@ -3,6 +3,8 @@ import React from 'react'
 export default function Hours() {
     return (
         <table>
+            <tbody>
+
             <tr>
                 <td>
                     Mon - Fri
@@ -19,6 +21,7 @@ export default function Hours() {
                     10AM - 3PM
                 </td>
             </tr>
+            </tbody>
         </table>
     )
 }
