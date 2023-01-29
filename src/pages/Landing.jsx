@@ -75,13 +75,13 @@ window.innerWidth < window.innerHeight ?
       <PortraitAlbum />
       :
       <>
-              <picture className="hero">
+              {/* <picture className="hero">
           <source srcSet={image1}
             media="(orientation: landscape)" />
           <source srcSet={image2}
             media="(max-width: 650px)" />
           <img src={image1} alt="barber shop" width='100%' />
-        </picture>
+        </picture> */}
       </>
       }
       <a href="https://www.yelp.com/biz/tabor-barber-shop-portland" target='_blank' rel='noreferrer'>
