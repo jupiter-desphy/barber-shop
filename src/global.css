@@ -34,6 +34,7 @@ body {
   font-weight: 500;
   letter-spacing: 0.01rem;
   overflow-x: hidden;
+  /* background-color: rgba(33, 127, 220, 0.141); */
 }
 
 h1 {
@@ -197,7 +198,7 @@ animation: 20s scroll-left linear infinite;
 }
 .marquee p {
   font: 'Sign Painter';
-  padding-right: 0;
+  /* padding-right: 0; */
   /* font-size: 2rem; */
 }
 
@@ -219,14 +220,16 @@ animation: 20s scroll-left linear infinite;
   justify-content: center;
 }
 
-#book, #call {
+#book, #call, .button {
   margin: 0 1.6rem;
   border: solid;
 
 }
 
 #book,
-#call, .marquee-container {
+#call,
+.button,
+.marquee-container {
   border-top: solid;
   border-bottom: solid;
   border-width: 1px;
@@ -234,6 +237,12 @@ animation: 20s scroll-left linear infinite;
   align-content: center;
   letter-spacing: 0.05rem;
   transition: 0.2s background-color linear, 0.2s color linear;
+}
+
+.rounded {
+  border-radius: 1.5rem;
+  text-decoration: none;
+  padding: 0.6rem 2rem 0.5rem 2rem;;
 }
 
 @media (min-width: 670px) {
@@ -347,5 +356,5 @@ a:hover {
 
 .space-between {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }

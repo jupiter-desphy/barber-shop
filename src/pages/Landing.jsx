@@ -7,6 +7,9 @@ import ImageGallery from '../components/ImageGallery';
 import PortraitAlbum from '../components/PortraitAlbum';
 import desktopImage from '../images/barbershop169.jpeg';
 import mobileImage from '../images/barbershop5-4.jpeg';
+import image1 from '../images/mr-tony-tony.jpeg';
+import image2 from '../images/stuffed-horse-haircut-4-3.jpeg';
+
 
 // import MyGallery from '../components/ImageGallery';
 
@@ -18,13 +21,6 @@ export const Landing = () => {
     <>
       <div className="hero-container" style={{ backgroundImage: `url(${bgImage})` }}>
 
-        {/* <picture className="hero">
-          <source srcSet={desktopImage}
-            media="(orientation: landscape)" />
-          <source srcSet={mobileImage}
-            media="(max-width: 650px)" />
-          <img src={desktopImage} alt="barber shop" width='100%' />
-        </picture> */}
       </div>
       <div className='columns'>
 
@@ -74,17 +70,32 @@ export const Landing = () => {
           <br></br>
         </div>
       </div>
+      {
+window.innerWidth < window.innerHeight ?
       <PortraitAlbum />
-      <a href="https://www.yelp.com/biz/tabor-barber-shop-portland">
+      :
+      <>
+              <picture className="hero">
+          <source srcSet={image1}
+            media="(orientation: landscape)" />
+          <source srcSet={image2}
+            media="(max-width: 650px)" />
+          <img src={image1} alt="barber shop" width='100%' />
+        </picture>
+      </>
+      }
+      <a href="https://www.yelp.com/biz/tabor-barber-shop-portland" target='_blank' rel='noreferrer'>
         <div className="review marquee-container">
-          <br/>
-          <div className='marquee'>
-            <u>
-              Shout us out on yelp!
-            </u>
-          </div>
-          <br/>
-        </div>
+          <br />
+          {/* <div className='marquee'> */}
+            <p className='rounded button space-between'>
+              <u>
+                Shout us out on yelp!
+              </u>
+            </p>
+          {/* </div> */}
+          <br />
+        </div>   
       </a>
 
       {/* <div className='columns'>
@@ -108,7 +119,6 @@ export const Landing = () => {
           <Address />
           <br></br>
         </div>
-
       </div> */}
       {/* <GoogleMap width={"100%"} height={'300px'} /> */}
     </>
