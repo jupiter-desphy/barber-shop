@@ -4,6 +4,7 @@ import Hours from '../components/Hours';
 import Address from '../components/Address';
 import PhoneNumber from '../components/PhoneNumber';
 import ImageGallery from '../components/ImageGallery';
+import Staff from '../components/Staff';
 import PortraitAlbum from '../components/PortraitAlbum';
 import desktopImage from '../images/barbershop169.jpeg';
 import mobileImage from '../images/barbershop5-4.jpeg';
@@ -67,11 +68,10 @@ export const Landing = () => {
           <p>
             We offer precision haircuts, beard trims, and hot towel shaves as well as a wide variety of classic scissor and clipper haircuts that will have you feeling brand new.
           </p>
-          <br></br>
+      <Staff />
         </div>
       </div>
-      {
-window.innerWidth < window.innerHeight ?
+      { window.innerWidth < window.innerHeight ?
       <PortraitAlbum />
       :
       <>
