@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactImageGallery from 'react-image-gallery';
+import Slider from 'react-slick';
 import image1 from '../images/barber-shop-rhode-island.jpeg';
 import image2 from '../images/barber-shop-ri-239-100.jpeg';
 
@@ -19,6 +20,7 @@ const images = [
   ];
   
   export default class MyGallery extends React.Component {
+    
     render() {
       return <ReactImageGallery items={images} showBullets={true} showPlayButton={false} autoPlay={true} showNav={false} />;
     }

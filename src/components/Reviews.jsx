@@ -2,7 +2,6 @@ import React from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
-import { Fade } from 'hamburger-react';
 
 export default function Reviews() {
     var settings = {
@@ -46,7 +45,7 @@ export default function Reviews() {
                 </div>
                 <div className="review">
                     <blockquote cite='https://www.yelp.com/biz/tabor-barber-shop-portland#reviews'>
-                        I saw Tony and got a great fade. The shop is clean and they have off street parking
+                        I saw Tony and got a great fade. The shop is clean and they have off street parking.
                     </blockquote>
                     <figcaption>
                         - Scott F.
@@ -69,7 +68,7 @@ export default function Reviews() {
             </Slider>
         </div>
     );
-        }
+}
 //         <div className='reviews'>
 //             <div className='review' >
 

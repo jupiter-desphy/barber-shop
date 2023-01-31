@@ -7,6 +7,7 @@ import ImageGallery from '../components/ImageGallery';
 import Staff from '../components/Staff';
 import Reviews from '../components/Reviews';
 import PortraitAlbum from '../components/PortraitAlbum';
+import Services from '../components/Services';
 import desktopImage from '../images/barbershop169.jpeg';
 import mobileImage from '../images/barbershop5-4.jpeg';
 import image1 from '../images/mr-tony-tony.jpeg';
@@ -50,7 +51,7 @@ export const Landing = () => {
           <p>
             Kids, senior & military discounts!
           </p>
-          <p>
+          <p className='hidden'>
             Walk-ins welcome!
           </p>
         </div>
@@ -89,13 +90,16 @@ export const Landing = () => {
       <a href="https://www.yelp.com/biz/tabor-barber-shop-portland" target='_blank' rel='noreferrer'>
 
           <br />
+          <div className="marquee-container">
             <p className='rounded button space-between'>
               <u>
                 Shout us out on yelp!
               </u>
             </p>
+          </div>
           <br />
       </a>
+      <Services />
 
       {/* <div className='columns'>
 

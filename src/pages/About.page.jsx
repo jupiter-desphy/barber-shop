@@ -2,6 +2,7 @@ import React from 'react';
 // import image from '../images/rhodeislandbarbershop.jpeg';
 import ReactImageGallery from 'react-image-gallery'
 import MyGallery from '../components/ImageGallery';
+import Staff from '../components/Staff';
 import PortraitAlbum from '../components/PortraitAlbum';
 
 export const About = () => {
@@ -17,7 +18,7 @@ export const About = () => {
           We offer precision haircuts, beard trims, and hot towel shaves as well as a wide variety of classic scissor and clipper haircuts that will have you feeling brand new.
         </p>
       </div>
-      <br/>
+      <Staff />
       <PortraitAlbum />
     </div>
   )

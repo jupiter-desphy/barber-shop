@@ -5,13 +5,13 @@
   src: url(SignPainterHouseScript.ttf) format('truetype');
 }
 :root {
-  --black: #141414;
+  /* --primary-black: #141414; */
+  --primary-black: #1c1b1b;
+  --soft-black: #404245;
+  --soft-grey-background: rgb(242, 241, 241);
+  --tan-background: #ebe7df;
   --background-dark: #1b1d21;
-  --dark-green: #0d4538;
-  --grey: rgb(135, 135, 135);
   --header-height: 4.5em;
-
-  
   --sans-serif: "Neue Haas Grotesk Text Std", Helvetica, Arial, sans-serif;
   font-size: 16px;
 }
@@ -34,6 +34,7 @@ body {
   font-weight: 500;
   letter-spacing: 0.01rem;
   overflow-x: hidden;
+  color: var(--primary-black);
   /* background-color: rgba(33, 127, 220, 0.141); */
 }
 
@@ -41,9 +42,6 @@ h1 {
   padding: 2rem 10vw 0.5rem;
 }
 
-h2 {
-  padding: 1rem 0;
-}
 
 p {
   padding: 1vh 10vw;
@@ -62,7 +60,7 @@ button:hover {
 }
 
 a {
-  color: var(--black);
+  color: var(--primary-black);
   text-decoration: none;
 }
 
@@ -142,13 +140,10 @@ ol {
   /* vertical-align: middle; */
   /* z-index: 99; */
 /* } */
-
-.columns {
-  /* width: 100%; */
+.flex-dir-col {
   display: flex;
-  /* justify-content: space-between; */
+  flex-direction: column;
 }
-
 .columns {
   padding: 0;
   display: flex;
@@ -198,8 +193,7 @@ animation: 20s scroll-left linear infinite;
 }
 .marquee p {
   font: 'Sign Painter';
-  /* padding-right: 0; */
-  /* font-size: 2rem; */
+  font-size: 1rem;
 }
 
 .pre-scroll::before {
@@ -245,6 +239,45 @@ animation: 20s scroll-left linear infinite;
   padding: 0.6rem 2rem 0.5rem 2rem;;
 }
 
+
+.slick-list img{
+  padding: 0;
+  background-color: #1c1b1b;
+}
+
+.services {
+  text-align: center;
+}
+
+.services-menu-container{
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  line-height: 1.5rem;
+  padding: 1rem;
+}
+
+.services-menu {
+  display: grid;
+  grid-template-columns: 1fr .18fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0 3rem;
+  font-weight: 500;
+  width: 290px;
+  /* height: fit-content; */
+}
+.services h3{
+  display: block;
+  justify-items: center;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0; */
+  /* width: 100vh; */
+  text-align: center;
+}
+
 @media (min-width: 670px) {
   #book:hover, #call:hover, .marquee-container:hover {
     color: #fff;
@@ -274,7 +307,7 @@ animation: 20s scroll-left linear infinite;
 /* 
     color: white;
     background-color: #0d4538; */
-    color: var(--black);
+    color: var(--primary-black);
     background-color: rgb(242, 241, 241);
     
     font-size: 1rem;
@@ -317,7 +350,7 @@ animation: 20s scroll-left linear infinite;
     background: transparent;
     aspect-ratio: 1;
     /* top: .1rem; */
-    left: 0.8rem;
+    left: 1rem;
     border: 0;
   }
 
@@ -359,11 +392,11 @@ a:hover {
   justify-content: center;
 }
 
+
 /* ----------------------------- */
 
 .staff {
   align-items: center;
-  /* background-color: #f2f2f2; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -373,7 +406,7 @@ a:hover {
 
 .reviews {
   padding: 3rem 0;
-  color: #1c1b1b;
+  color: var(--primary-black);
   background: #ebe7df;
   font-weight: 300;
   font-size: 1rem;
@@ -381,15 +414,15 @@ a:hover {
   line-height: 2rem;
 }
 
-blockquote {
-  font-size: clamp(1.2rem, 50%, 3rem);
-}
-
 .review {
-  padding: 3rem 5vw;
+  padding: 3rem 5vw .2rem;
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+blockquote {
+  font-size: clamp(1.2rem, 50%, 3rem);
 }
 
 figcaption {
@@ -402,7 +435,7 @@ figcaption {
 cite {
   display: block;
   font-weight: 100;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .review::before {
@@ -493,7 +526,7 @@ cite {
   width: 160px;
 }
 .name {
-  color: #404245;
+  color: var(--soft-black);
   font-size: 36px;
   font-weight: 600;
   margin-top: 16px;
