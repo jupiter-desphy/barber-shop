@@ -7,7 +7,7 @@ import { Fade } from 'hamburger-react';
 export default function Reviews() {
     var settings = {
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 10000,
         dots: true,
         infinite: true,
         speed: 1000,
