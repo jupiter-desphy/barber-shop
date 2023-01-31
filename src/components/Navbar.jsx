@@ -13,6 +13,7 @@ export default function Navbar() {
     return (
         <>
             <header className='primary-header'>
+
                 <nav className='west-side'>
                     <ul id={showLinks ? "show-links" : ""} className='primary-navigation flex'>
                         <li>
@@ -24,11 +25,12 @@ export default function Navbar() {
                             </a>
                         </li>
                         <li>
-                            <NavLink to={"/contact"} onClick={() => setShowLinks(false)}>CONTACT</NavLink>
+                            <NavLink to={"/reviews"} onClick={() => setShowLinks(false)}>REVIEWS</NavLink>
                         </li>
                     </ul>
                 </nav>
-                {/* <h2 className='logo'> */}
+
+
                 <NavLink to={"/"}>
                     <h4 className='logo'>
                         <img src={logo} alt='logo' height='40em' />

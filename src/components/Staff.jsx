@@ -5,11 +5,12 @@ import Sabastian from '../images/sabastian.jpeg';
 
 export default function Staff() {
 
-    const onClickTony = ('https://booksy.com/en-us/720068_tabor-barbershop_barber-shop_134776_portland/staffer/669506#ba_s=bd_1')
+    const onClickTony = ('https://booksy.com/en-us/720068_tabor-barbershop_barber-shop_134776_portland/staffer/669506#ba_s=bd_1');
 
-    const onClickMrTony = ('https://booksy.com/en-us/720068_tabor-barbershop_barber-shop_134776_portland/staffer/669505#ba_s=bd_1')
+    const onClickMrTony = ('https://booksy.com/en-us/720068_tabor-barbershop_barber-shop_134776_portland/staffer/669505#ba_s=bd_1');
 
-    const onClickSebastian = ('https://booksy.com/en-us/720068_tabor-barbershop_barber-shop_134776_portland/staffer/746316#ba_s=bd_1')
+    const onClickSebastian = ('https://booksy.com/en-us/720068_tabor-barbershop_barber-shop_134776_portland/staffer/746316#ba_s=bd_1');
+    
     return (
         <div className="staff">
             <div className="person">

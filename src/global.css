@@ -84,7 +84,7 @@ a {
   z-index: 1000;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 4.5em;
   display: flex;
   align-items: center;
@@ -365,13 +365,55 @@ a:hover {
   align-items: center;
   /* background-color: #f2f2f2; */
   display: flex;
-  /* font-family: "Merriweather", serif; */
   flex-wrap: wrap;
   justify-content: center;
-  /* height: 100vh; */
   margin: 0;
   padding-bottom: 2rem;
 }
+
+.reviews {
+  padding: 3rem 0;
+  color: #1c1b1b;
+  background: #ebe7df;
+  font-weight: 300;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+blockquote {
+  font-size: clamp(1.2rem, 50%, 3rem);
+}
+
+.review {
+  padding: 3rem 5vw;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+figcaption {
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+}
+
+cite {
+  display: block;
+  font-weight: 100;
+  font-size: 1.1rem;
+}
+
+.review::before {
+  content: "\201c";
+  font-family: reckless;
+  display: block;
+  font-size: 8em;
+  line-height: .4;
+  text-align: center;
+}
+
 .person {
   align-items: center;
   display: flex;

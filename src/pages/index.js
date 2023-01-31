@@ -1,6 +1,6 @@
-import { Landing } from "./Landing";
-import { About } from "./About";
-import { Reviews } from "./Reviews";
-import Contact from "./Contact";
+import { Landing } from "./Landing.page";
+import { About } from "./About.page";
+import { ReviewsPage } from "./Reviews.page";
+import Contact from "./Contact.page";
 
-export { Landing, About, Reviews, Contact };
+export { Landing, About, ReviewsPage, Contact };
