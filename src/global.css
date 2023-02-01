@@ -249,34 +249,33 @@ animation: 20s scroll-left linear infinite;
   text-align: center;
 }
 
-.services-menu-container{
+.services-menu{
   text-align: left;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   line-height: 1.5rem;
-  padding: 1rem;
+  padding: 0 3rem 3rem;
 }
 
-.services-menu {
+.services-menu > div {
   display: grid;
-  grid-template-columns: 1fr .18fr;
-  grid-template-rows: repeat(3, 1fr);
-  gap: 0 3rem;
+  grid-template-columns: 1fr .1fr;
+  /* grid-template-rows: repeat(3, 1fr); */
+  /* gap: 0 3rem; */
   font-weight: 500;
   width: 290px;
+  margin: 0 5vw;
   /* height: fit-content; */
 }
-.services h3{
-  display: block;
-  justify-items: center;
-  justify-self: center;
-  justify-content: center;
-  align-items: center;
-  /* margin: 0; */
-  /* width: 100vh; */
-  text-align: center;
+
+.services-menu > *:not(:last-child){
+  padding: 10px 0;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: #40454db7;
 }
+
 
 @media (min-width: 670px) {
   #book:hover, #call:hover, .marquee-container:hover {
