@@ -46,16 +46,18 @@ export const Landing = () => {
 
       {/* <br /> */}
 
-      <div className='marquee-container'>
-        <div className='marquee'>
-          <p>
-            Kids, senior & military discounts!
-          </p>
-          <p className='hidden'>
-            Walk-ins welcome!
-          </p>
+      <a href='https://booksy.com/en-us/720068_tabor-barbershop_barber-shop_134776_portland' id='text-dec-none'>
+        <div className='marquee-container'>
+          <div className='marquee'>
+            <p>
+              Kids, senior & military discounts!
+            </p>
+            <p className='hidden'>
+              Walk-ins welcome!
+            </p>
+          </div>
         </div>
-      </div>
+      </a>
 
       <br />
 
@@ -64,15 +66,15 @@ export const Landing = () => {
       <Reviews />
       <a href="https://www.yelp.com/biz/tabor-barber-shop-portland" target='_blank' rel='noreferrer'>
 
-          <br />
-          <div className="marquee-container">
-            <p className='rounded button space-between'>
-              <u>
-                Shout us out on yelp!
-              </u>
-            </p>
-          </div>
-          <br />
+        <br />
+        <div className="marquee-container">
+          <p className='rounded button space-between'>
+            <u>
+              Shout us out on yelp!
+            </u>
+          </p>
+        </div>
+        <br />
       </a>
       <Services />
 

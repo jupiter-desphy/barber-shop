@@ -178,7 +178,11 @@ ol {
   /* margin-bottom: 2rem; */
   /* background-color: brown; */
 }
-  
+
+a *:hover {
+  /* text-decoration: none; */
+}
+
 .marquee {
 display: flex;
 justify-content: space-between;
@@ -194,10 +198,11 @@ animation: 20s scroll-left linear infinite;
 .marquee p {
   font: 'Sign Painter';
   font-size: 1rem;
+  /* text-decoration: none; */
 }
 
-.pre-scroll::before {
-  content: Walk-ins welcome!;
+#text-dec-none {
+  text-decoration: none;
 }
 
 .hours {
@@ -235,7 +240,7 @@ animation: 20s scroll-left linear infinite;
 
 .rounded {
   border-radius: 1.5rem;
-  text-decoration: none;
+  /* text-decoration: none; */
   padding: 0.6rem 2rem 0.5rem 2rem;;
 }
 
