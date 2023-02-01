@@ -4,15 +4,8 @@ export default function Services() {
     return (
 
         <div className='services'>
-            {/* <div className="west-side"> */}
             <h1>Services</h1>
-            {/* </div> */}
-            {/* <br /> */}
-
                 <div className="services-menu">
-
-
-                    {/* <div className=''> */}
                     <div>
                         <div>Haircut</div>
                         <div>$30</div>
@@ -49,57 +42,9 @@ export default function Services() {
                         <div>Seniors Haircut</div>
                         <div>$22</div>
                     </div>
-                    <div></div>
-                    {/* </div>
-                </div>
-        <div className="services-menu"> */}
-                    {/* </div>
-        <div className="services-menu"> */}
-                    {/* </div> */}
-                    {/* <div className=''> */}
-                    {/* </div> */}
-
+                    <div>
+                    </div>
             </div>
-
-
-
-
-
-
-
-
-
-            {/* <table>
-            <tbody>
-            
-                    Haircut
-                    $30
-            
-                    Long Haircut
-                    $35
-            
-                    Buzz Cut
-                    $20
-            
-                    Beard Trim
-                    $15
-            
-                    Hot Towel Shave
-                    $30
-            
-                    Haircut and Shave
-                    $50
-            
-                    Haircut and Beard Trim
-                    $40
-            
-                    Kids & Military Haircut
-                    $25
-            
-                    Seniors Haircut
-                    $22
-            </tbody>
-        </table> */}
         </div>
     )
 }

@@ -1,9 +1,5 @@
-@import "~react-image-gallery/styles/css/image-gallery.css";
 @import url("https://fonts.cdnfonts.com/css/neue-haas-grotesk-text-std");
-@font-face {
-  font-family: 'Sign Painter';
-  src: url(SignPainterHouseScript.ttf) format('truetype');
-}
+
 :root {
   /* --primary-black: #141414; */
   --primary-black: #1c1b1b;
