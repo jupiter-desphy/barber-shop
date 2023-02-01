@@ -17,7 +17,7 @@ export default function Navbar() {
                 <nav className='west-side'>
                     <ul id={showLinks ? "show-links" : ""} className='primary-navigation flex'>
                         <li className='shown'>
-                            <NavLink to={"/"}>
+                            <NavLink to={"/"} onClick={() => setShowLinks(false)}>
                                 HOME
                             </NavLink>
 
@@ -28,7 +28,9 @@ export default function Navbar() {
                             </a>
                         </li>
                         <li>
-                            <NavLink to={"/about"} onClick={() => setShowLinks(false)}>ABOUT</NavLink>
+                            <NavLink to={"/about"} onClick={() => setShowLinks(false)}>
+                                ABOUT
+                            </NavLink>
                         </li>
                         <li>
                             <a href='https://booksy.com/en-us/720068_tabor-barbershop_barber-shop_134776_portland' target='_blank' rel='noReferrer' >
@@ -36,7 +38,9 @@ export default function Navbar() {
                             </a>
                         </li>
                         <li>
-                            <NavLink to={"/reviews"} onClick={() => setShowLinks(false)}>REVIEWS</NavLink>
+                            <NavLink to={"/reviews"} onClick={() => setShowLinks(false)}>
+                                REVIEWS
+                            </NavLink>
                         </li>
                     </ul>
                 </nav>
@@ -44,7 +48,7 @@ export default function Navbar() {
 
                 <NavLink to={"/"}>
                     <h4 className='logo'>
-                        <img src={logo} alt='logo' height='40em' />
+                        <img src={logo} alt='Tabor Logo' height='40em' />
                         <div>
                             BARBER SHOP
                         </div>
@@ -52,7 +56,7 @@ export default function Navbar() {
                 </NavLink>
 
                 <button onClick={toggleNav} className='mobile-nav-toggle' aria-controls='primary-navigation' data-visible="false" aria-expanded={showLinks}>
-                    <Hamburger size={26} color="#141414" />
+                    <Hamburger toggled={showLinks} size={26} color="#141414" />
                     <span className='sr-only'>Menu</span>
                 </button>
 

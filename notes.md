@@ -7,6 +7,7 @@
 - Create own carousel component.
 - Icons for address
 - Painter's font on marquee
+- SQL 
 - Hidden Nav Bar Options
   1. Home / logo
   2. Book Button
