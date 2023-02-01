@@ -64,14 +64,14 @@ export const Landing = () => {
       {/* <div id='about'> */}
       <WhoWeAre />
       <Reviews />
-      <a href="https://www.yelp.com/biz/tabor-barber-shop-portland" target='_blank' rel='noreferrer'>
+      <a href="https://www.yelp.com/biz/tabor-barber-shop-portland" target='_blank' rel='noreferrer' id='text-dec-none'>
 
         <br />
         <div className="marquee-container">
           <p className='rounded button space-between'>
-            <u>
+            {/* <u> */}
               Shout us out on yelp!
-            </u>
+            {/* </u> */}
           </p>
         </div>
         <br />

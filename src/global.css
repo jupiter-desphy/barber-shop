@@ -30,11 +30,12 @@
 body {
   align-items: center;
   font-family: var(--sans-serif);
-  font-size: 16px;
+  /* font-size: 16px; */
   font-weight: 500;
   letter-spacing: 0.01rem;
   overflow-x: hidden;
   color: var(--primary-black);
+  width: 100vw;
   /* background-color: rgba(33, 127, 220, 0.141); */
 }
 
@@ -244,12 +245,6 @@ animation: 20s scroll-left linear infinite;
   padding: 0.6rem 2rem 0.5rem 2rem;;
 }
 
-
-.slick-list img{
-  padding: 0;
-  background-color: #1c1b1b;
-}
-
 .services {
   text-align: center;
 }
@@ -269,8 +264,9 @@ animation: 20s scroll-left linear infinite;
   /* grid-template-rows: repeat(3, 1fr); */
   /* gap: 0 3rem; */
   font-weight: 500;
-  width: 290px;
-  margin: 0 5vw;
+  /* width: 300px; */
+  width: clamp(250px, 300px, 27.334vw);
+  margin: 0 3vw;
   /* height: fit-content; */
 }
 
