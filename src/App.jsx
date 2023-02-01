@@ -3,7 +3,8 @@ import './global.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Landing, About, Contact, ReviewsPage } from './pages';
 import Navbar from './components/Navbar';
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
 

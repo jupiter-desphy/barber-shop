@@ -16,6 +16,17 @@ export default function Navbar() {
 
                 <nav className='west-side'>
                     <ul id={showLinks ? "show-links" : ""} className='primary-navigation flex'>
+                        <li className='shown'>
+                            <NavLink to={"/"}>
+                                HOME
+                            </NavLink>
+
+                        </li>
+                        <li className='shown'>
+                            <a href='https://booksy.com/en-us/720068_tabor-barbershop_barber-shop_134776_portland' target='_blank' rel='noReferrer' >
+                                BOOK
+                            </a>
+                        </li>
                         <li>
                             <NavLink to={"/about"} onClick={() => setShowLinks(false)}>ABOUT</NavLink>
                         </li>
@@ -38,10 +49,7 @@ export default function Navbar() {
                             BARBER SHOP
                         </div>
                     </h4>
-                    {/* <img src="./barbershop.jpeg" alt='logo' /> */}
                 </NavLink>
-
-                {/* </h2> */}
 
                 <button onClick={toggleNav} className='mobile-nav-toggle' aria-controls='primary-navigation' data-visible="false" aria-expanded={showLinks}>
                     <Hamburger size={26} color="#141414" />
@@ -53,8 +61,6 @@ export default function Navbar() {
                     <a href='https://booksy.com/en-us/720068_tabor-barbershop_barber-shop_134776_portland' id={'book'} target='_blank' rel='noReferrer' >
                         <strong>BOOK <span className='hidden'>APPOINTMENT</span></strong>
                     </a>
-                    {/* <NavLink to={"/reviews"} className='hidden'>CONTACT</NavLink> */}
-                    {/* 971-888-4133 */}
                 </div>
                 <div className={showLinks && "blur"}></div>
             </header>

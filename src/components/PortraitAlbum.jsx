@@ -1,29 +1,27 @@
 import React from 'react';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
 import image1 from '../images/mr-tony-tony.jpeg';
 import image2 from '../images/stuffed-horse-haircut-4-3.jpeg';
 
 export default function Reviews() {
-    var settings = {
-        autoplay: true,
-        autoplaySpeed: 10000,
-        dots: true,
-        infinite: true,
-        speed: 1000,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        fade: true,
-        centerMode: true,
-    };
-   
-    return (
-      <div className='portrait-album'>
-          <Slider {...settings}>
-          <img src={image1} alt="barber shop" width='100%' />
-          <img src={image2} alt="barber shop" width='100%' />
-          </Slider>
-      </div>
+  var settings = {
+    autoplay: true,
+    autoplaySpeed: 10000,
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    centerMode: true,
+  };
+
+  return (
+    <div className='portrait-album'>
+      <Slider {...settings}>
+        <img src={image1} alt="Third generation barber cutting his son's hair as a kid who's now himself the barber / owner of Tabor Barbershop." width='100%' />
+        <img src={image2} alt="Tony (4th gen barber) as a child cutting his stuffed horse's hair with an audience of all his other stuffed animals." width='100%' />
+      </Slider>
+    </div>
   );
 }

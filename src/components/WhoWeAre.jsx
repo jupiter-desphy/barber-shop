@@ -15,7 +15,7 @@ export default function WhoWeAre() {
                     media="(orientation: landscape)" />
                 <source srcSet={portraitImage}
                     media="(orientation: portrait)" />
-                <img src={landscapeImage} alt="barber shop" width='100%' />
+                <img src={landscapeImage} alt="grandpa's barbershop with barbers and community lined up behind child getting hair cut." width='100%' />
             </picture>
             <h1>WHO WE ARE</h1>
             <div className=''>
