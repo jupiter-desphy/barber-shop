@@ -276,6 +276,12 @@ animation: 20s scroll-left linear infinite;
   border-color: #40454db7;
 }
 
+.portrait-album {
+  min-height: 62vh;
+  /* position: relative; */
+  /* background-color: #ca6060; */
+}
+
 
 @media (min-width: 670px) {
   #book:hover, #call:hover, .marquee-container:hover {

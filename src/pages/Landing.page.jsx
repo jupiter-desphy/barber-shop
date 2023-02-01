@@ -3,7 +3,7 @@ import GoogleMap from '../components/GoogleMap';
 import Hours from '../components/Hours';
 import Address from '../components/Address';
 import PhoneNumber from '../components/PhoneNumber';
-import ImageGallery from '../components/ImageGallery';
+import WhoWeAre from '../components/WhoWeAre';
 import Staff from '../components/Staff';
 import Reviews from '../components/Reviews';
 import PortraitAlbum from '../components/PortraitAlbum';
@@ -59,33 +59,8 @@ export const Landing = () => {
 
       <br />
 
-      <div id='about'>
-        <ImageGallery />
-
-        <h1>WHO WE ARE</h1>
-        <div className=''>
-          <p>
-            As third and fourth generation barbers, we're a father and son team with over 100 years of experience in the family name.
-          </p>
-          <p>
-            We offer precision haircuts, beard trims, and hot towel shaves as well as a wide variety of classic scissor and clipper haircuts that will have you feeling brand new.
-          </p>
-      <Staff />
-        </div>
-      </div>
-      { window.innerWidth < window.innerHeight ?
-      <PortraitAlbum />
-      :
-      <>
-              {/* <picture className="hero">
-          <source srcSet={image1}
-            media="(orientation: landscape)" />
-          <source srcSet={image2}
-            media="(max-width: 650px)" />
-          <img src={image1} alt="barber shop" width='100%' />
-        </picture> */}
-      </>
-      }
+      {/* <div id='about'> */}
+      <WhoWeAre />
       <Reviews />
       <a href="https://www.yelp.com/biz/tabor-barber-shop-portland" target='_blank' rel='noreferrer'>
 

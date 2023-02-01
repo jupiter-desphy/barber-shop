@@ -8,7 +8,7 @@ import image2 from '../images/stuffed-horse-haircut-4-3.jpeg';
 export default function Reviews() {
     var settings = {
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 10000,
         dots: true,
         infinite: true,
         speed: 1000,
@@ -19,7 +19,7 @@ export default function Reviews() {
     };
    
     return (
-      <div className='album'>
+      <div className='portrait-album'>
           <Slider {...settings}>
           <img src={image1} alt="barber shop" width='100%' />
           <img src={image2} alt="barber shop" width='100%' />
