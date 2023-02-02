@@ -4,7 +4,8 @@
 :root {
   --primary-black: #1c1b1b;
   --soft-black: #404245;
-  --vignelli-red: #f54029;
+  /* --vignelli-red: #f54029; */
+  --deep-red: rgb(202, 52, 52);
   --soft-grey-background: rgb(242, 241, 241);
   --tan-background: #ebe7df;
   --background-dark: #1b1d21;
@@ -272,7 +273,7 @@ td {
   width: 380px;
 }
 .divider {
-  background-color: var(--vignelli-red);
+  background-color: var(--deep-red);
   height: 1px;
   width: 160px;
 }
@@ -355,7 +356,7 @@ cite {
   display: grid;
   grid-template-columns: 1fr 0.1fr;
   font-weight: 500;
-  width: clamp(250px, 300px, 27.334vw);
+  width: clamp(250px, calc(350px + 5vw), 27.334vw);
   margin: 0 3vw;
 }
 
@@ -383,8 +384,7 @@ cite {
   #call:hover,
   .marquee-container:hover {
     color: #fff;
-    background-color: var(--vignelli-red);
-    /* background-color: rgb(202, 52, 52); */
+    background-color: var(--deep-red);
     text-decoration: none;
   }
 

@@ -21,16 +21,16 @@ Click [here](https://barber-shop-beta.vercel.app/) to visit!
 
 The user experience was designed in consideration of two customers in mind: first-time visitors whom we'd like to convert and repeat guests who want as little friction in booking an appointment as possible.
 
-- Initial viewport when landing on the home page includes only the most pertinent information with hero image sized to occupy all remaining real estate.
-- Guests perusing can scroll to navigate or click the hyperlinks to learn more.
-- Navigation bar with fixed position as the user scrolls through the site.
-- "**BOOK**" button is given as much prominence as possible: bold, upper-cased, framed, and fixed to the upper-right hand corner to accommodate most users' dominant hand.
-- Numerous external links to the business's appointment booking platform to direct customer to point of sale.
 - Mobile-first approach to design:
     1. Hamburger nav menu with easing transitions & opaque background while blurring the site behind it out of focus.
     2. Photos chosen and elements hidden or shown depending on the size of the browser.
     3. Employment of various techniques to minimize dependency on media queries for less rigid device support such as: flex, grid, wrap, picture elements, clamp, relative sizing units.
     4. Phone number and address offer to call and open google maps to the destination respectively.
+- "**BOOK**" button is given as much prominence as possible: bold, upper-cased, framed, and fixed to the upper-right hand corner to accommodate most users' dominant hand.
+- Initial viewport when landing on the home page includes only the most pertinent information with hero image sized to occupy all remaining real estate.
+- Guests perusing can scroll to navigate or click the hyperlinks to learn more.
+- Navigation bar with fixed position as the user scrolls through the site.
+- Numerous external links to the business's appointment booking platform to direct customer to point of sale.
 - Aesthetics and animations were balanced to prioritize legibility, offer some modernity while not detracting from DIY and heritage story of the establishment.
 
 ### Accessibility
