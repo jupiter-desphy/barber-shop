@@ -4,7 +4,10 @@ import Address from '../components/Address';
 import WhoWeAre from '../components/WhoWeAre';
 import Reviews from '../components/Reviews';
 import Services from '../components/Services';
+import Marquee from '../components/Marquee';
+
 import desktopImage from '../images/barbershop169.jpeg';
+// import mobileImage from '../images/barbershop169.jpeg';
 import mobileImage from '../images/barbershop5-4.jpeg';
 
 export const Landing = () => {
@@ -17,48 +20,23 @@ export const Landing = () => {
 
       </div>
       <div className='columns'>
-
         <div className="west-side" >
           <a href='tel:9718884133' id='call'>
             Call 971-888-4133
           </a>
         </div>
-
-        <div className='directions'>
           <Address />
-        </div>
-
         <div className='east-side'>
           <Hours />
         </div>
       </div>
 
-      <a href='https://booksy.com/en-us/720068_tabor-barbershop_barber-shop_134776_portland' id='text-dec-none'>
-        <div className='marquee-container'>
-          <div className='marquee'>
-            <p>
-              Kids, senior & military discounts!
-            </p>
-            <p className='hidden'>
-              Walk-ins welcome!
-            </p>
-          </div>
-        </div>
-      </a>
-
+      <Marquee hrefURl={'https://booksy.com/en-us/720068_tabor-barbershop_barber-shop_134776_portland'}
+        text={'Kids, senior & military discounts!'}
+        wideScreenOnlyText={'Walk-ins welcome!'} />
       <br />
       <WhoWeAre />
       <Reviews />
-      <a href="https://www.yelp.com/biz/tabor-barber-shop-portland" target='_blank' rel='noreferrer' id='text-dec-none'>
-
-        <br />
-        <div className="marquee-container">
-          <p className='rounded button space-between'>
-              Shout us out on yelp!
-          </p>
-        </div>
-        <br />
-      </a>
       <Services />
     </>
   )

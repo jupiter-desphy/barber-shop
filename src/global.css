@@ -81,13 +81,34 @@ td {
 
 .west-side {
   display: flex;
-  flex: 1;
+  flex: 10%;
 }
 
 .east-side {
   display: flex;
   justify-content: flex-end;
-  flex: 1;
+  flex: 10%;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.rounded {
+  border-radius: 1.5rem;
+  padding: 0.6rem 2rem 0.5rem 2rem;
+  width: fit-content;
+  background-color: #fff;
+}
+
+.small-font {
+  font-size: 1rem;
 }
 
 /* - - - - - - - - - - PRIMARY HEADER - - - - - - - - - - */
@@ -111,6 +132,10 @@ td {
   justify-items: center;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.15rem;
+  position: absolute;
+  top: 7px;
+  left: 0;
+  right: 0;
 }
 
 .nav-margin {
@@ -213,21 +238,6 @@ td {
 .marquee p {
   font: "Sign Painter";
   font-size: 1rem;
-}
-
-.flex {
-  display: flex;
-  gap: var(--gap, 1rem);
-}
-
-.flex-center {
-  display: flex;
-  justify-content: center;
-}
-
-.rounded {
-  border-radius: 1.5rem;
-  padding: 0.6rem 2rem 0.5rem 2rem;
 }
 
 /* - - - - - - - - - - STAFF - - - - - - - - - - */
@@ -356,7 +366,7 @@ cite {
   display: grid;
   grid-template-columns: 1fr 0.1fr;
   font-weight: 500;
-  width: clamp(250px, calc(350px + 5vw), 27.334vw);
+  width: clamp(250px, calc(27vw), 27.334vw);
   margin: 0 3vw;
 }
 
@@ -468,6 +478,6 @@ cite {
   }
 
   .hero-container {
-    padding-top: calc(45vh);
+    padding-top: 45vh;
   }
 }

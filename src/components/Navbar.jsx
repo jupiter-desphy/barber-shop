@@ -20,7 +20,6 @@ export default function Navbar() {
                             <NavLink to={"/"} onClick={() => setShowLinks(false)}>
                                 HOME
                             </NavLink>
-
                         </li>
                         <li className='shown'>
                             <a href='https://booksy.com/en-us/720068_tabor-barbershop_barber-shop_134776_portland' target='_blank' rel='noReferrer' >
