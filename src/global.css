@@ -370,15 +370,8 @@ cite {
 /* - - - - - - - - - - PORTRAIT ALBUM - - - - - - - - - - */
 
 .portrait-album {
-  min-height: 62vh;
-}
-
-.slick-track {
-  position: absolute;
-}
-
-.slick-arrow {
-  
+  min-height: 80vh;
+  overflow: hidden;
 }
 
 /* - - - - - - - - - - MEDIA QUERIES - - - - - - - - - - */
