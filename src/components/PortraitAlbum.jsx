@@ -7,14 +7,13 @@ export default function Reviews() {
   var settings = {
     autoplay: true,
     autoplaySpeed: 10000,
-    dots: true,
+    // dots: true,
     infinite: true,
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
-    centerMode: true,
-    vertical: true,
+    arrows: false,
   };
 
   return (
