@@ -1,8 +1,8 @@
 import React from 'react';
 import Staff from '../components/Staff';
 import PortraitAlbum from '../components/PortraitAlbum';
-import landscapeImage from '../images/barber-shop-ri-239-100.jpeg';
-import portraitImage from '../images/barber-shop-rhode-island.jpeg';
+import landscapeImage from '../images/grandpas-barbershop-239-100.jpeg';
+import portraitImage from '../images/grandpas-barbershop.jpeg';
 
 
 export default function WhoWeAre() {
