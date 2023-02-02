@@ -1,7 +1,7 @@
 import React from 'react';
-import Tony from '../images/tony.png';
-import MrTony from '../images/mr-tony.png';
-import Sabastian from '../images/sabastian.jpeg';
+import Tony from '../images/tony.jpg';
+import MrTony from '../images/mr-tony.jpg';
+import Sabastian from '../images/sabastian.jpg';
 
 export default function Staff() {
 

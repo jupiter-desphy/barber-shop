@@ -1,11 +1,9 @@
 # TO DO
 
-- Cleaner function for nav menu
-- Nav bar
 - Update photos
 - Add to family photos page. Maybe timeline style.
 - Create own carousel component.
-- Icons for address
+- Icons for address and phone
 - Painter's font on marquee
 - SQL 
 - Hidden Nav Bar Options
