@@ -1,54 +1,52 @@
-# 🐍 Nokia Snake I & II
+# Tabor Barber Shop
 
 \* *  *Technologies used include* ***React***, ***JavaScript***, ***HTML***, *and* ***CSS***. * * 
 
-<!-- [<img width="900px" src="public/images/screenshot.png"/>](https://nokia-snake-jupiter-desphy.vercel.app/) -->
-When I first got the snake to move, I heard within my soul the maniacal voice of Dr. Frankenstein, *"It's aliiiiiivee!!"*
+I developed this website for a local fourth-generation son and pop barbershop in Portland, Oregon from design to completion. Prior to this, they used a site made on Blogger that structured everything as a news feed without any navigation and awkward formatting. The primary information for the website (contact info, hours, and copy) was formatted together as a photo and plugged in as a blog post, making it unnavigable to screen readers as well as search engine optimization crawlers. If you clicked the phone number as a shortcut to call the establishment or even to copy the number, it would simply enlarge the photo. From a pure aesthetic perspective, I loved it! It had quirky, do-it-yourself charm and an authentic old-school feel. However, it was long past due for an update.
 
-And yet...
+Click [here](https://barber-shop-beta.vercel.app/) to visit!
 
-I wasn't satiated.
+<!-- ## Site
 
-I needed it to look and feel the way I remembered it on a Nokia 3310. It was the O.G. mobile app, the Candy Crush of the early aughts, that crowned this little brick by Nokia king. I remember then being charmed by the level of detail the programmers put into it and the intuitive user experience they delivered. I never anticipated the challenge ahead translating what they did with some dozens of pixels now equipped with modern programming languages. Stripped of the luxury of downloading a font, I wrote code for each letter: lower and uppercase, bold and lite. The end product allows you to choose between a more classic Snake I or Snake II, where the snake gains its stripes, teleports through walls, offers varying levels of difficulty and feeds on bonus prey.
+### [Landing Page](https://barber-shop-beta.vercel.app/)
 
-Click [here](https://nokia-snake-jupiter-desphy.vercel.app/) to demo!
+[<img width="800px" src=""/>](https://barber-shop-beta.vercel.app/)
 
-## Site
+### [About](https://barber-shop-beta.vercel.app/about)
 
-### [Landing Page](https://nokia-snake-jupiter-desphy.vercel.app/)
 
-### [Snake I](https://nokia-snake-jupiter-desphy.vercel.app/snake1)
+### [Reviews](https://barber-shop-beta.vercel.app/reviews) -->
 
-[<img width="800px" src="src/screenshots/snake-1.png"/>](https://nokia-snake-jupiter-desphy.vercel.app/snake1)
+## UX Objectives / UI Solutions
 
-### [Snake II](https://nokia-snake-jupiter-desphy.vercel.app/snake2)
+The user experience was designed in consideration of two customers in mind: first-time visitors whom we'd like to convert and repeat guests who want as little friction in booking an appointment as possible.
 
-[<img width="800px" src="src/screenshots/snake-2-screenshot.png"/>](https://nokia-snake-jupiter-desphy.vercel.app/snake2)
+- Initial viewport when landing on the home page includes only the most pertinent information with hero image sized to occupy all remaining real estate.
+- Guests perusing can scroll to navigate or click the hyperlinks to learn more.
+- Navigation bar with fixed position as the user scrolls through the site.
+- "**BOOK**" button is given as much prominence as possible: bold, upper-cased, framed, and fixed to the upper-right hand corner to accommodate most users' dominant hand.
+- Numerous external links to the business's appointment booking platform to direct customer to point of sale.
+- Mobile-first approach to design:
+    1. Hamburger nav menu with easing transitions & opaque background while blurring the site behind it out of focus.
+    2. Photos chosen and elements hidden or shown depending on the size of the browser.
+    3. Employment of various techniques to minimize dependency on media queries for less rigid device support such as: flex, grid, wrap, picture elements, clamp, relative sizing units.
+    4. Phone number and address offer to call and open google maps to the destination respectively.
+- Aesthetics and animations were balanced to prioritize legibility, offer some modernity while not detracting from DIY and heritage story of the establishment.
 
-## Features
+### Accessibility
 
-- Responsive CSS, framing screen as a Nokia if on a phone in portrait mode.
-- Animations and fonts created using HTML, Javascript, and CSS.
-    1. No outsourced font.
-    2. Only outsourced photo is the Nokia background image for mobile use. ...for now. 😉
-- Hover and focus inverts colors to denote button.
-- Levels in Snake II.
+I'm always eager to learn more how to improve the accessibility for all users, so any feedback is appreciated. These are some of the considerations I've included so far:
 
-### Controls
+- Aria controls
+- Screen-reader only elements
+- Descriptive alt tags
+- Zoom-enabled fonts
 
-- Controls via keyboard arrow keys, swipe gestures or "buttons."
-- ***Space*** bar for 3-phase pause functionality:
-    1. Bring to menu.
-    2. Back to game. Snake not yet moving.
-    3. Snake moving again.
-- ***Esc*** Back to menu.
-- Hover or ***tab*** key to focus on menu options.
-  
 ## Contact Me
 <!-- [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://nokia-snake-jupiter-desphy.vercel.app/) -->
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jupiterdesphy/)
 
-## Acknowledgements
+<!-- ## Acknowledgements -->
 
-- useInterval() hook API by [Dan Abramov](https://overreacted.io/making-setinterval-declarative-with-react-hooks/).
+<!-- - useInterval() hook API by [Dan Abramov](https://overreacted.io/making-setinterval-declarative-with-react-hooks/). -->

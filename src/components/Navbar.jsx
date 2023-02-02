@@ -28,7 +28,7 @@ export default function Navbar() {
                             </a>
                         </li>
                         <li>
-                            <NavLink to={"/about"} onClick={() => setShowLinks(false)}>
+                            <NavLink to={"/about"} onClick={toggleNav}>
                                 ABOUT
                             </NavLink>
                         </li>
