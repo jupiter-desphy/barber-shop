@@ -33,37 +33,29 @@ body {
   color: var(--primary-black);
   width: 100vw;
 }
-
 h1 {
   padding: 2rem 10vw 0.5rem;
 }
-
-
 p {
   padding: 1vh 10vw;
   font-size: 1.2rem;
   line-height: 1.2em;
   letter-spacing: 0.01rem;
 }
-
 button:hover {
   cursor: pointer;
 }
-
 a {
   color: var(--primary-black);
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
-
 ul,
 ol {
   list-style: none;
 }
-
 th,
 td {
   padding: 0 1.5rem 0 0;
@@ -74,42 +66,34 @@ td {
 #text-dec-none {
   text-decoration: none !important;
 }
-
 .space-between {
   display: flex;
   justify-content: center;
 }
-
 .west-side {
-
   display: flex;
   flex: 1;
 }
-
 .east-side {
   position: relative;
   display: flex;
   justify-content: flex-end;
   flex: 1;
 }
-
 .flex {
   display: flex;
   gap: var(--gap, 1rem);
 }
-
 .flex-center {
   display: flex;
   justify-content: center;
 }
-
 .rounded {
   border-radius: 1.5rem;
   padding: 0.6rem 2rem 0.5rem 2rem;
   width: fit-content;
   background-color: #fff;
 }
-
 .small-font {
   font-size: 1rem;
 }
@@ -128,7 +112,6 @@ td {
   justify-content: space-between;
   background-color: #fff;
 }
-
 .logo {
   display: grid;
   justify-content: center;
@@ -136,25 +119,21 @@ td {
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.15rem;
   position: absolute;
-  top: 4px;
+  top: 7px;
   left: 0;
   right: 0;
   z-index: -1;
 }
-
 .nav-margin {
   margin-top: var(--header-height);
   position: relative;
 }
-
 .mobile-nav-toggle {
   display: none;
 }
-
 .primary-navigation:first-child {
   padding-left: 2rem;
 }
-
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -164,21 +143,18 @@ td {
   overflow: hidden;
   white-space: nowrap;
 }
-
 .hero-container {
   padding-top: calc(100vh - var(--header-height) - var(--header-height));
   margin-top: var(--header-height);
   background-size: cover;
   background-position: bottom right;
 }
-
 #book,
 #call,
 .button {
   margin: 0 1.6rem;
   border: solid;
 }
-
 #book,
 #call,
 .button,
@@ -191,7 +167,6 @@ td {
   letter-spacing: 0.05rem;
   transition: 0.2s background-color linear, 0.2s color linear;
 }
-
 .columns {
   padding: 0;
   display: flex;
@@ -199,10 +174,6 @@ td {
   align-items: center;
   height: var(--header-height);
   background-color: #fff;
-}
-
-.hours {
-
 }
 
 /* - - - - - - - - - - MARQUEE - - - - - - - - - - */
@@ -213,20 +184,17 @@ td {
     -webkit-transform: translateX(100%);
     transform: translate(100%);
   }
-
   100% {
     -moz-transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
     transform: translate(-100%);
   }
 }
-
 .marquee-container {
   width: 100vw;
   overflow-x: scroll;
   overflow: hidden;
 }
-
 .marquee {
   display: flex;
   justify-content: space-between;
@@ -253,7 +221,6 @@ td {
   margin: 0;
   padding-bottom: 2rem;
 }
-
 .person {
   align-items: center;
   display: flex;
@@ -271,7 +238,6 @@ td {
   background: none;
   position: relative;
 }
-
 .container:hover {
   transform: scale(0.54);
 }
@@ -316,31 +282,26 @@ td {
   text-align: center;
   line-height: 2rem;
 }
-
 .review {
   padding: 3rem 5vw 0.2rem;
   align-items: center;
   display: flex;
   flex-direction: column;
 }
-
 blockquote {
   font-size: clamp(1.2rem, 50%, 3rem);
 }
-
 figcaption {
   padding: 1rem;
   font-size: 1.4rem;
   font-weight: 600;
   line-height: 1.8rem;
 }
-
 cite {
   display: block;
   font-weight: 100;
   font-size: 1rem;
 }
-
 .review::before {
   content: "\201c";
   font-family: reckless;
@@ -355,7 +316,6 @@ cite {
 .services {
   text-align: center;
 }
-
 .services-menu {
   text-align: left;
   display: flex;
@@ -364,15 +324,13 @@ cite {
   line-height: 1.5rem;
   padding: 0 3rem 3rem;
 }
-
 .services-menu > div {
   display: grid;
   grid-template-columns: 1fr 0.1fr;
   font-weight: 500;
-  width: clamp(250px, calc(27vw), 27.334vw);
+  width: clamp(250px, calc(24vw), 27.334vw);
   margin: 0 3vw;
 }
-
 .services-menu > *:not(:last-child) {
   padding: 10px 0;
   border-bottom: solid;
@@ -383,8 +341,6 @@ cite {
 /* - - - - - - - - - - PORTRAIT ALBUM - - - - - - - - - - */
 
 .portrait-album {
-  /* min-height: 65vh; */
-  /* overflow: hidden !important; */
   background-color: var(--tan-background);
 }
 
@@ -398,14 +354,12 @@ cite {
     background-color: var(--deep-red);
     text-decoration: none;
   }
-
   .shown {
     display: none;
   }
 }
 
 @media (max-width: 670px) {
-
   .primary-navigation {
     position: fixed;
     z-index: 1000;
@@ -420,7 +374,6 @@ cite {
     font-weight: 500;
     letter-spacing: 0.1em;
   }
-
   .blur {
     background: hsl(0 0% 95% / 0.5);
     position: absolute;
@@ -431,18 +384,15 @@ cite {
     bottom: 0;
     backdrop-filter: blur(1px);
   }
-
   .primary-navigation > * {
     padding: 0 0 10px 0;
     border-bottom: solid;
     border-width: 1px;
     border-color: var(--soft-black);
   }
-
   #show-links {
     transform: translateX(0%);
   }
-
   .mobile-nav-toggle {
     display: block;
     position: absolute;
@@ -453,33 +403,27 @@ cite {
     left: 1rem;
     border: 0;
   }
-
   #book {
     margin-right: 1.2rem;
     padding: 0.6rem 0.7rem 0.5rem;
   }
-
   #call {
     margin-left: 0;
   }
-
   .hidden {
     display: none;
   }
-
   .columns {
     height: auto;
     flex-direction: column;
     align-items: flex-start;
     padding: 2rem 10vw;
   }
-
   .columns > * {
     padding-left: 0;
     margin-left: 0;
     padding-bottom: 1rem;
   }
-
   .hero-container {
     padding-top: 45vh;
   }
