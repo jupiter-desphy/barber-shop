@@ -27,7 +27,10 @@ export const Landing = () => {
         </div>
           <Address />
         <div className='east-side'>
+          <div>
+          {/* <h3 className="shown">HOURS</h3> */}
           <Hours />
+          </div>
         </div>
       </div>
 
