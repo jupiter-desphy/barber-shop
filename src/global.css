@@ -377,6 +377,10 @@ cite {
   position: absolute;
 }
 
+.slick-arrow {
+  
+}
+
 /* - - - - - - - - - - MEDIA QUERIES - - - - - - - - - - */
 
 @media (min-width: 670px) {
@@ -420,10 +424,6 @@ cite {
     bottom: 0;
     backdrop-filter: blur(1px);
   }
-
-  /* .primary-navigation a {
-    text-decoration: none;
-  } */
 
   .primary-navigation > * {
     padding: 0 0 10px 0;

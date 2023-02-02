@@ -11,7 +11,8 @@ export default function Reviews() {
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: true,
-        centerMode: true,
+        vertical: true,
+        arrows: false,
     };
 
 
