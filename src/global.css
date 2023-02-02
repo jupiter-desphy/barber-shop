@@ -80,14 +80,16 @@ td {
 }
 
 .west-side {
+
   display: flex;
-  flex: 10%;
+  flex: 1;
 }
 
 .east-side {
+  position: relative;
   display: flex;
   justify-content: flex-end;
-  flex: 10%;
+  flex: 1;
 }
 
 .flex {
@@ -136,6 +138,7 @@ td {
   top: 7px;
   left: 0;
   right: 0;
+  z-index: -1;
 }
 
 .nav-margin {
