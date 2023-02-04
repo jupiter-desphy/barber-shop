@@ -4,18 +4,18 @@
 
 I developed this website for a local fourth-generation son and pop barbershop in Portland, Oregon from design to completion. Prior to this, they used a site made on Blogger that structured everything as a news feed without any navigation and awkward formatting. The primary information for the website (contact info, hours, and copy) was formatted together as a photo and plugged in as a blog post, making it unnavigable to screen readers as well as search engine optimization crawlers. If you clicked the phone number as a shortcut to call the establishment or even to copy the number, it would simply enlarge the photo. From a pure aesthetic perspective, I loved it! It had quirky, do-it-yourself charm and an authentic old-school feel. However, it was long past due for an update.
 
-Click [here](https://barber-shop-beta.vercel.app/) to visit!
+Click [here](https://www.taborbarbershop.com/) to visit!
 
 <!-- ## Site
 
-### [Landing Page](https://barber-shop-beta.vercel.app/)
+### [Landing Page](https://www.taborbarbershop.com/)
 
-[<img width="800px" src=""/>](https://barber-shop-beta.vercel.app/)
+[<img width="800px" src=""/>](https://www.taborbarbershop.com/)
 
-### [About](https://barber-shop-beta.vercel.app/about)
+### [About](https://www.taborbarbershop.com/about)
 
 
-### [Reviews](https://barber-shop-beta.vercel.app/reviews) -->
+### [Reviews](https://www.taborbarbershop.com/reviews) -->
 
 ## UX Objectives / UI Solutions
 
@@ -37,16 +37,17 @@ The user experience was designed in consideration of two customers in mind: firs
 
 I'm always eager to learn more how to improve the accessibility for all users, so any feedback is appreciated. These are some of the considerations I've included so far:
 
-- Aria controls
+- Aria controls on the navigation bar
 - Screen-reader only elements
 - Descriptive alt tags
 - Zoom-enabled fonts
 
 ## Contact Me
-<!-- [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://nokia-snake-jupiter-desphy.vercel.app/) -->
+
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/jupiter-desphy)
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jupiterdesphy/)
 
 <!-- ## Acknowledgements -->
 
-<!-- - useInterval() hook API by [Dan Abramov](https://overreacted.io/making-setinterval-declarative-with-react-hooks/). -->
+<!-- - useInterval() hook API by [Dan Abramov](https://overreacted.io/making-setinterval-declarative-with-react-hooks/). https://nokia-snake-jupiter-desphy.vercel.app/-->
