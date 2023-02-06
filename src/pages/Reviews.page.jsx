@@ -1,20 +1,21 @@
 import React from 'react';
 import Reviews from '../components/Reviews';
+import Marquee from '../components/Marquee';
 
 export const ReviewsPage = () => {
   return (
-    <div className=''>
+    <div>
       <Reviews />
-      <br />
-      <a href="https://www.yelp.com/biz/tabor-barber-shop-portland" target='_blank' rel='noreferrer' id='text-dec-none' className='flex-center'>
-
-        <p className='rounded button small-font'>
-          <i>
-            Shout us out on yelp!
-          </i>
-        </p>
+      <a href="https://www.yelp.com/biz/tabor-barber-shop-portland" target='_blank' id='text-dec-none' rel='noreferrer'>
+      <div className="marquee-container" style={{
+        textAlign: 'center',
+        fontSize: '16px'
+        }}>
+        <i>  
+        We're proud and grateful to our community for spreading the word, so we can focus on our craft. We invite you to read more or add on <u>Yelp!</u>
+        </i>
+      </div>
       </a>
-      <br />
     </div>
   )
 }

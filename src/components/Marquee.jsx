@@ -4,14 +4,20 @@ export default function Marquee({ hrefURl, leftText, rightText }) {
     return (
         <a href={hrefURl} id='text-dec-none' role='button'>
             <div className='marquee-container'>
-                    <span className='marquee-left'>
+                <div className='marquee-left'>
+                    {leftText}
+                    <div className='hidden'>
                         {leftText}
-                    </span>
+                    </div>
+                </div>
             </div>
             <div className="marquee-container">
-                <span className="marquee-right">
+                <div className="marquee-right">
                     {rightText}
-                </span>
+                    <div className='hidden'>
+                        {rightText}
+                    </div>
+                </div>
             </div>
         </a>
     )

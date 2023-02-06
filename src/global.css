@@ -10,6 +10,7 @@
   --tan-background: #ebe7df;
   --background-dark: #1b1d21;
   --sans-serif: "Neue Haas Grotesk Text Std", Helvetica, Arial, sans-serif;
+  --serif: Century, 'Times New Roman', Times, serif;
   --header-height: 4.5em;
 }
 
@@ -183,10 +184,13 @@ td {
   overflow-x: scroll;
   overflow: hidden;
   margin-bottom: 3px;
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  font-style: italic;
 }
 .marquee-left {
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   padding: 0;
   -moz-transform: translateX(100%);
   -webkit-transform: translateX(100%);
@@ -197,7 +201,7 @@ td {
 }
 .marquee-right {
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
   padding: 0;
   -moz-transform: translateX(-100%);
   -webkit-transform: translateX(-100%);
@@ -206,9 +210,9 @@ td {
   -moz-animation: 22s scroll-right linear infinite;
   -webkit-animation: 22s scroll-right linear infinite;
 }
-.marquee span {
+.marquee div {
   /* font: "Sign Painter"; */
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 @keyframes scroll-left {
   0% {
