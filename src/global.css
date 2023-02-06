@@ -178,6 +178,38 @@ td {
 
 /* - - - - - - - - - - MARQUEE - - - - - - - - - - */
 
+.marquee-container {
+  width: 100vw;
+  overflow-x: scroll;
+  overflow: hidden;
+  margin-bottom: 3px;
+}
+.marquee-left {
+  display: flex;
+  justify-content: left;
+  padding: 0;
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translate(100%);
+  animation: 48s scroll-left linear infinite;
+  -moz-animation: 24s scroll-left linear infinite;
+  -webkit-animation: 24s scroll-left linear infinite;
+}
+.marquee-right {
+  display: flex;
+  justify-content: right;
+  padding: 0;
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translate(-100%);
+  animation: 44s scroll-right linear infinite;
+  -moz-animation: 22s scroll-right linear infinite;
+  -webkit-animation: 22s scroll-right linear infinite;
+}
+.marquee span {
+  /* font: "Sign Painter"; */
+  font-size: 1rem;
+}
 @keyframes scroll-left {
   0% {
     -moz-transform: translateX(100%);
@@ -190,25 +222,17 @@ td {
     transform: translate(-100%);
   }
 }
-.marquee-container {
-  width: 100vw;
-  overflow-x: scroll;
-  overflow: hidden;
-}
-.marquee {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-  -moz-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  transform: translate(100%);
-  -moz-animation: 20s scroll-left linear infinite;
-  -webkit-animation: 20s scroll-left linear infinite;
-  animation: 20s scroll-left linear infinite;
-}
-.marquee p {
-  font: "Sign Painter";
-  font-size: 1rem;
+@keyframes scroll-right {
+  0% {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translate(-100%);
+  }
+  100% {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translate(100%);
+  }
 }
 
 /* - - - - - - - - - - STAFF - - - - - - - - - - */

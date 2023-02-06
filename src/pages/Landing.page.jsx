@@ -35,8 +35,8 @@ export const Landing = () => {
       </div>
 
       <Marquee hrefURl={'https://booksy.com/en-us/720068_tabor-barbershop_barber-shop_134776_portland'}
-        text={'Kids, senior & military discounts!'}
-        wideScreenOnlyText={'Walk-ins welcome!'} />
+        leftText={'Kids, senior & military discounts!'}
+        rightText={'Walk-ins welcome!'} />
       <br />
       <WhoWeAre />
       <Reviews />
