@@ -196,19 +196,15 @@ td {
   -webkit-transform: translateX(100%);
   transform: translate(100%);
   animation: 48s scroll-left linear infinite;
-  -moz-animation: 24s scroll-left linear infinite;
-  -webkit-animation: 24s scroll-left linear infinite;
 }
 .marquee-right {
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   padding: 0;
   -moz-transform: translateX(-100%);
   -webkit-transform: translateX(-100%);
   transform: translate(-100%);
-  animation: 44s scroll-right linear infinite;
-  -moz-animation: 22s scroll-right linear infinite;
-  -webkit-animation: 22s scroll-right linear infinite;
+  animation: 50s scroll-right linear infinite;
 }
 .marquee div {
   /* font: "Sign Painter"; */
@@ -339,6 +335,12 @@ cite {
   text-align: center;
 }
 
+.caption {
+  text-align: center;
+  font-size: 1.4rem;
+  letter-spacing: .03rem;
+}
+
 /* - - - - - - - - - - SERVICES MENU - - - - - - - - - - */
 
 .services {
@@ -455,4 +457,14 @@ cite {
   .hero-container {
     padding-top: 45vh;
   }
+  .marquee-left {
+    -moz-animation: 24s scroll-left linear infinite;
+    -webkit-animation: 24s scroll-left linear infinite;
+    animation: 24s scroll-left linear infinite;
+}
+  .marquee-right {
+    -moz-animation: 25s scroll-right linear infinite;
+    -webkit-animation: 25s scroll-right linear infinite;
+    animation: 25s scroll-right linear infinite;
+}
 }

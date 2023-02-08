@@ -14,9 +14,6 @@ export default function Marquee({ hrefURl, leftText, rightText }) {
             <div className="marquee-container">
                 <div className="marquee-right">
                     {rightText}
-                    <div className='hidden'>
-                        {rightText}
-                    </div>
                 </div>
             </div>
         </a>
