@@ -1,4 +1,4 @@
-# TO DO
+# FUTURE
 
 - Undeclare position and z-index on .logo, so it isn't obscured.
 - Go to 90% mobile nav screen.
