@@ -1,5 +1,7 @@
 # TO DO
 
+- Undeclare position and z-index on .logo, so it isn't obscured.
+- Go to 90% mobile nav screen.
 - Update photos
 - Add to family photos page. Maybe timeline style.
 - Create own carousel component.
