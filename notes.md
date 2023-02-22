@@ -1,13 +1,10 @@
 # FUTURE
 
-- Undeclare position and z-index on .logo, so it isn't obscured.
-- Go to 90% mobile nav screen.
 - Update photos
 - Add to family photos page. Maybe timeline style.
 - Create own carousel component.
 - Icons for address and phone
-- Painter's font on marquee
-- add SQL 
+- add SQL database.
 - Hidden Nav Bar Options
   1. Home / logo
   2. Book Button
