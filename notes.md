@@ -1,6 +1,6 @@
 # FUTURE
 
-- Update photos
+- Update photos esp landscape versions of portrait album.
 - Add to family photos page. Maybe timeline style.
 - Create own carousel component.
 - Icons for address and phone
