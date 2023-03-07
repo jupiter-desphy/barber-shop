@@ -2,7 +2,7 @@
 
 \* *  *Technologies used include* ***React***, ***JavaScript***, ***HTML***, *and* ***CSS***. * * 
 
-I developed this website for a local fourth-generation son and pop barbershop in Portland, Oregon from design to completion. Prior to this, they used a site made on Blogger that structured everything as a news feed without any navigation and awkward formatting. The primary information for the website (contact info, hours, and copy) was formatted together as a photo and plugged in as a blog post, making it unnavigable to screen readers as well as search engine optimization crawlers. If you clicked the phone number as a shortcut to call the establishment or even to copy the number, it would simply enlarge the photo. From a pure aesthetic perspective, I loved it! It had quirky, do-it-yourself charm and an authentic old-school feel. However, it was long past due for an update.
+I developed this website for a local fourth-generation son and pop barbershop in Portland, Oregon from design to completion. Prior to this, they used a site made on Blogger that structured everything as a blog news feed awkwardly formatted and devoid of any navigation. The primary information for the website (contact info, hours, and copy) was formatted together as a photo and plugged in as a blog post, making it unnavigable to screen readers and search engine optimization crawlers. If you clicked the phone number as a shortcut to call the establishment or even to copy the number, it would simply enlarge the photo. From a pure aesthetic perspective, I loved it! It had quirky, do-it-yourself charm and an authentic old-school feel. However, it was long past due for an update.
 
 Click [here](https://www.taborbarbershop.com/) to visit!
 
@@ -23,7 +23,7 @@ The user experience was designed in consideration of two customers in mind: firs
 
 - Mobile-first approach to design:
     1. Hamburger nav menu with easing transitions & opaque background while blurring the site behind it out of focus.
-    2. Photos chosen and elements hidden or shown depending on the size of the browser.
+    2. Photos chosen and elements hidden or shown depending on the size of the browser for both aesthetics and improved page load times.
     3. Employment of various techniques to minimize dependency on media queries for less rigid device support such as: flex, grid, wrap, picture elements, clamp, relative sizing units.
     4. Phone number and address offer to call and open google maps to the destination respectively.
 - "**BOOK**" button is given as much prominence as possible: bold, upper-cased, framed, and fixed to the upper-right hand corner to accommodate most users' dominant hand.
