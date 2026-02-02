@@ -8,39 +8,39 @@ export default function Services() {
                 <div className="services-menu">
                     <div>
                         <div>Haircut</div>
-                        <div>$30</div>
-                    </div>
-                    <div>
-                        <div>Long Haircut</div>
                         <div>$35</div>
                     </div>
                     <div>
-                        <div>Buzz Cut</div>
-                        <div>$20</div>
-                    </div>
-                    <div>
-                        <div>Beard Trim</div>
-                        <div>$15</div>
-                    </div>
-                    <div>
-                        <div>Hot Towel Shave</div>
-                        <div>$30</div>
-                    </div>
-                    <div>
-                        <div>Haircut and Shave</div>
-                        <div>$50</div>
-                    </div>
-                    <div>
-                        <div>Haircut and Beard Trim</div>
+                        <div>Long Haircut</div>
                         <div>$40</div>
                     </div>
                     <div>
-                        <div>Kids & Military Haircut</div>
+                        <div>Buzz Cut</div>
                         <div>$25</div>
                     </div>
                     <div>
+                        <div>Beard Trim</div>
+                        <div>$20</div>
+                    </div>
+                    <div>
+                        <div>Hot Towel Shave</div>
+                        <div>$35</div>
+                    </div>
+                    <div>
+                        <div>Haircut and Shave</div>
+                        <div>$60</div>
+                    </div>
+                    <div>
+                        <div>Haircut and Beard Trim</div>
+                        <div>$50</div>
+                    </div>
+                    <div>
+                        <div>Kids & Military Haircut</div>
+                        <div>$30</div>
+                    </div>
+                    <div>
                         <div>Seniors Haircut</div>
-                        <div>$22</div>
+                        <div>$27</div>
                     </div>
                     <div>
                     </div>
