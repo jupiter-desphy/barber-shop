@@ -2,6 +2,9 @@
   "name": "barbershop",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "24.x"
+  },
   "dependencies": {
     "@googlemaps/react-wrapper": "^1.1.35",
     "@testing-library/jest-dom": "^5.16.5",
